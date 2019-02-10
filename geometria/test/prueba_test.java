@@ -49,5 +49,11 @@ public class prueba_test {
 	public void test() {
 		fail("No implementado aun");
 	}
+	
+	public Circulo(double r, String tipoFigura) {
+		super(tipoFigura);
+		
+		r=7;
+	}
 
 }
