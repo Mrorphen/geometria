@@ -4,9 +4,17 @@ public class Circulo extends FiguraGeometrica {
 	//Constante pi
 	static final double PI = 3.1416;
 	
+	
 	public Circulo(double r, String tipoFigura) {
 		super(tipoFigura);
-		radio = r;
+		//radio = r; Anulo radio y lo multiplico por -1. regla de signos=> - x - = +
+		if (r<0) {
+			radio = r*-1;
+		}
+		else
+		{
+			radio =r;
+		}
 	}
 
 	@Override
