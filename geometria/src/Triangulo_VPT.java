@@ -1,29 +1,26 @@
 
-public class Triangulo extends FiguraGeometrica {
-	private double a;
-	private double b;
-	private double c;
+public class Triangulo_VPT extends FiguraGeometrica {
+	private double lado1;
+	private double lado2;
+	private double lado3;
 	
-	public Triangulo(String tipoFigura, double lado1, double lado2, double lado3) {
+	public Triangulo_VPT(String tipoFigura, double lado1, double lado2, double lado3) {
 		super(tipoFigura);
-		a = lado1;
-		b = lado2;
-		c = lado3;
+		lado1 = lado1;
+		lado2 = lado2;
+		lado3 = lado3;
 	}
 
 	@Override
 	public double perimetro() {
-		return a + b + c;
+		return lado1 + lado2 + lado3;
 	}
 
 	@Override
 	public double area() { //Utiliza la formula de Her—n
 		double sp;
-		sp = this.semiPerimetro();
-		return Math.sqrt(sp * (sp-a) * (sp-b) * (sp-c));
+		sp = this.perimetro() / 2;
+		return Math.sqrt(sp * (sp-lado1) * (sp-lado2) * (sp-lado3));
 	}
-	
-	public double semiPerimetro() {
-		return this.perimetro() / 2;
-	}
+	//refactorizacion inline
 }
