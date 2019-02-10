@@ -21,3 +21,6 @@ public class Circulo extends FiguraGeometrica {
 	}
 
 }
+
+
+// documentar es de sabios aunque sea pesado

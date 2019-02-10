@@ -25,3 +25,5 @@ public class Triangulo extends FiguraGeometrica {
 	
 	
 }
+
+//documentar es de sabios aunque sea pesado

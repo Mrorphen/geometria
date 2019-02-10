@@ -25,3 +25,5 @@ public abstract class FiguraGeometrica {
 	}
 
 }
+
+//documentar es de sabios aunque sea pesado
